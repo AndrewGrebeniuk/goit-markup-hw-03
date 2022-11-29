@@ -52,7 +52,7 @@ a:link{
     letter-spacing: 0.02em;
 }
 .page-header{
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 .nav-link:hover, .nav-link:focus {
     color: var(--highlight-color);
@@ -71,6 +71,9 @@ a:link{
 .contact-link:hover, .contact-link:focus {
   color: var(--highlight-color);
 }
+/*.h1, h2, h3, p, section, ul, li{
+    margin: 0 auto;
+}*/
 /*хедер*/
 
 .site-nav{
@@ -78,7 +81,7 @@ a:link{
 }
 
 .site-nav-item{
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .site-nav-item:last-child{
@@ -87,7 +90,7 @@ a:link{
 
 .address-nav{
     display: flex;
-    margin-left: 344px;
+    margin: auto;
 }
 
 .address-nav-item + .address-nav-item{
@@ -106,15 +109,15 @@ a:link{
 /*Секція герой з кнопкою*/
 .hero-section{
     background-color: #2F303A;
-    margin-bottom: 94px;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
     
 }
-/*основний напис заголока*/
+/*основний напис заголовка*/
 .hero{
     margin-top: 0;
     margin-bottom: 30px;
-
     color: #FFFFFF;
     font-weight: 900;
    
@@ -127,7 +130,7 @@ a:link{
 /*кнопка героя*/
 .button {
     border-radius: 4px;
-    border-color: var(--highlight-color);
+    border-color: transparent;
     padding: 10px 32px;
     min-width: 216px;
     display: inline-block;
@@ -147,12 +150,12 @@ a:link{
 
 .button:hover, .button:focus {
 color: var(--main-text-color) ;
-background-color: var(--highlight-color);
+background-color: #FFFFFF ;
 }
 /*перелік чотирьох переваг*/
 .advantage-section{
     margin-top: 0;
-    margin-bottom: 94px;
+    /*margin-bottom: 94px;*/
     
 }
 .advantage{
@@ -164,7 +167,7 @@ background-color: var(--highlight-color);
     
 }
 
-/*опис чотрирьох переваг*/
+/*опис чотирьох переваг*/
 
 .advantage-list{
     display: flex;
@@ -184,9 +187,7 @@ background-color: var(--highlight-color);
     
     font-size: 14px; 
     line-height: 1.7;
-    letter-spacing: 0.03em; 
-    
-    
+    letter-spacing: 0.03em;   
 }
 
 .title{
@@ -215,14 +216,17 @@ background-color: var(--highlight-color);
 
 /*команда*/
 
+.img{
+    max-width: 100%;
+}
 .team-list{
     display: flex;
 
 }
 
 .team-element{
-    width: 370px;
     margin-right: 30px;
+    background-color: #FFFFFF;
 }
 
 .team-element:last-child{
@@ -232,10 +236,14 @@ background-color: var(--highlight-color);
 .team{
     background-color: #F5F4FA;
 }
+/*опис члена команди*/
+.team-descr{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /*призвища команди*/
 .team-name{
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -262,21 +270,25 @@ background-color: var(--highlight-color);
 
 /*футер*/
 
-.footer-container{
+
+
+.footer{
+    background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.footer{
-    background-color: #2F303A;
+.logo-footer{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
 }
-
-
 
 .logo-white{
     color: #FFFFFF;
 }
-
 /*адреса футер*/
 .address{
     color: #FFFFFF;
@@ -286,8 +298,6 @@ background-color: var(--highlight-color);
     font-size: 14px; 
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .address:hover, .address:focus {
@@ -309,14 +319,19 @@ background-color: var(--highlight-color);
   color: var(--highlight-color);
 }
 
+.address-element + .addres-element{
+    margin-top: 6px;
+}
 
-.portfolio{
+/*.portfolio{
     margin-top: 94px;
     margin-bottom: 94px;
 
     display: flex;
+}*/
+.title-portfolio{
+    visibility: hidden;
 }
-
 /*фільтр портфоліо*/
 .button-list{
     margin-top: 0;
@@ -335,9 +350,8 @@ background-color: var(--highlight-color);
 
 }
   .portf-button {
-    display: inline-block;
     border-radius: 4px;
-    border-color: #F5F4FA;
+    border-color: transparent;
     padding: 6px 22px;
     min-width: 86px;
     color: var(--main-text-color);
@@ -371,7 +385,7 @@ background-color: var(--highlight-color);
     margin-bottom: 30px;
     margin-right: 30px;
 
-    border-bottom: 1px solid #EEEEEE;
+    /*border-bottom: 1px solid #EEEEEE;*/
 }
 
 .list-item:nth-child(3n){
@@ -388,6 +402,15 @@ background-color: var(--highlight-color);
     letter-spacing: 0.06em;
 
  }
+
+ .portf-element{
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+ }
+
+
 /*опис проєктов*/
  .port-desc{
     margin: 0;
@@ -408,6 +431,7 @@ background-color: var(--highlight-color);
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: auto;
 
  }
 
