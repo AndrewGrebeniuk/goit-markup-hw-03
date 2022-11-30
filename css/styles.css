@@ -40,6 +40,9 @@ a:link{
     list-style-type: disc;
 }
 
+.nav{
+    margin-right: auto;
+}
 .nav-link{
     display: block;
     color: var(--main-text-color);
@@ -284,6 +287,7 @@ background-color: #FFFFFF ;
     font-size: 26px;
     text-decoration: none;
     letter-spacing: 0.03em;
+    display: block;
 }
 
 .logo-white{
@@ -298,6 +302,7 @@ background-color: #FFFFFF ;
     font-size: 14px; 
     line-height: 1.7;
     letter-spacing: 0.03em;
+    padding-top: 20px;
 }
 
 .address:hover, .address:focus {
@@ -319,8 +324,9 @@ background-color: #FFFFFF ;
   color: var(--highlight-color);
 }
 
-.address-element + .addres-element{
-    margin-top: 6px;
+.address-element:first-child{
+    margin-bottom: 6px;
+    padding-top: 9px;
 }
 
 /*.portfolio{
