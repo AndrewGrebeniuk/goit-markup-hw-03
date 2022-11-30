@@ -5,11 +5,37 @@
     --secondary-text: #757575;
 
 }
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+
 .body{
     font-family: Roboto, sans-serif;
     color: var(--main-text-color);
     font-style: normal;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+ 
+ .container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+
+ }
+
 
 .logo{
     font-family: Raleway;
@@ -39,6 +65,8 @@ a:link{
     text-decoration: none;
     list-style-type: disc;
 }
+
+
 
 .nav{
     margin-right: auto;
@@ -93,7 +121,7 @@ a:link{
 
 .address-nav{
     display: flex;
-    margin: auto;
+    margin-left: auto;
 }
 
 .address-nav-item + .address-nav-item{
@@ -158,7 +186,7 @@ background-color: #FFFFFF ;
 /*перелік чотирьох переваг*/
 .advantage-section{
     margin-top: 0;
-    /*margin-bottom: 94px;*/
+    padding-bottom: 0;
     
 }
 .advantage{
@@ -329,12 +357,6 @@ background-color: #FFFFFF ;
     padding-top: 9px;
 }
 
-/*.portfolio{
-    margin-top: 94px;
-    margin-bottom: 94px;
-
-    display: flex;
-}*/
 .title-portfolio{
     visibility: hidden;
 }
@@ -428,17 +450,6 @@ background-color: #FFFFFF ;
 
  }
 
- .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
- }
- 
- .container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
 
- }
 
   
